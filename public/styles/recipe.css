@@ -1,0 +1,191 @@
+section#receita {
+    margin: 10px auto 50px auto;
+}
+.receita_descricao {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+section#receita .receita_img img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+section#receita .receita_title {
+    margin: 30px 0;
+    text-align: center;
+}
+section#receita .receita_title h1 {
+    color: #111111;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 42px;
+
+}
+section#receita .receita_title h3 {
+    color: #777777;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 30px;
+}
+
+section#receita .receita_descricao h2{
+    font-size: 24px;
+    color: #111111;
+    line-height: 28px;
+
+}
+section#receita .receita_descricao_titles {
+    margin-top: 20px;
+    display: flex;
+    align-items: baseline;
+}
+
+section#receita .receita_descricao_titles span {
+    border: none;
+    border-style: none;
+    background: none;
+    font-weight: bold;
+    color: #999999;
+    font-size: 12px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+.none {
+    display: none;
+}
+
+section#receita .receita_ingredientes,
+section#receita .receita_preparo,
+section#receita .receita_infos {
+    margin: 20px 0;
+    color: #444444;
+    font-size: 18px;
+    line-height: 28px;
+    
+}
+ul {
+    text-indent: 15px;
+}
+
+/******** ADMIN *******/
+
+
+
+section#receita div.admin_receita {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+
+section#receita div.admin_receita h4 {
+    font-size: 24px;
+    line-height: 28px;
+    color: #111111;
+}
+
+/***GALERY ****/
+
+.gallery {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.highlight>img {
+    width: 100%;
+    height: 280px;
+
+    object-fit: cover;
+    object-position: 50% 50%;
+
+    border: 1px solid #efefef;
+    border-radius: 15px;
+
+    cursor: zoom-in;
+}
+
+.gallery-preview {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+
+    width: 100%;
+}
+
+ .gallery-preview img {
+    height: 50px;
+    width: 50px;
+
+    border-radius: 3.5px;
+    object-fit: cover;
+
+    opacity: 0.5;
+    cursor: pointer;
+
+    transition: 400ms;
+}
+
+.gallery-preview img:hover,
+ .gallery-preview img.active {
+    opacity: 1;
+}
+
+/*** LIGHTBOX GALLERY ***/
+
+ .highlight .lightbox-target {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+
+    overflow: hidden;
+    z-index: 100;
+
+    top: -100%;
+    left: 0;
+    opacity: 0;
+
+    transition: opacity 400ms;
+
+}
+
+ .highlight .lightbox-target img {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    height: 90%;
+
+    object-fit: contain;
+}
+
+.highlight a.lightbox-close {
+    width: 50px;
+    height: 50px;
+    color: white;
+
+    position: absolute;
+    top: -80px;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 400ms;
+}

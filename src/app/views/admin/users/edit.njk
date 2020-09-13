@@ -1,0 +1,55 @@
+{% extends "layout.njk" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/profile_users.css">
+{% endblock styles %}
+
+{% block header %}
+    {% include "../parts/header.njk" %}
+{% endblock header %}
+
+{% block content %}
+
+    <section class="user-dashborad edit container form">
+
+        <div class="header">
+            <h1>Atualizar Usuário</h1>
+            <form action="/admin/users?_method=DELETE" method="post">
+                <input type="hidden" name="id" value="{{user.id}}">
+                <button id="delete_user" type="submit">Deletar</button>
+            </form>
+        </div>
+
+        <form method="POST" action="/admin/users?_method=PUT">
+
+            <div class="fields">
+                <div class="item">
+                    <div>Nome Completo</div>
+                    <div class="input">
+                        <input type="text" name="name" id="" placeholder="Digite seu nome completo" value="{{ user.name}}" required="required">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div>E-mail</div>
+                    <div class="input validate">
+                        <input type="email" name="email" id="" placeholder="Digite seu e-mail" value="{{ user.email}}" onblur="Validate.apply(this, 'isEmail')">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="input checkbox">
+                            <input type="checkbox" name="is_admin" id="" {% if user.is_admin == true %} checked {% endif %} > <label for="is_admin">Administrador</label>
+                    </div>
+                </div>
+
+                <input type="hidden" name="id" value="{{user.id}}">
+            </div>
+            <div class="buttons">
+                <button class="button save_user" type="submit">Salvar</button>
+            </div>
+        </form>
+
+    </section>
+
+{% endblock content %}

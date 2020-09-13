@@ -1,0 +1,118 @@
+/*** CARDS INDEX ***/
+
+.chefs_cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.chefs_cards .card{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.chefs_cards .card .card_img {
+    margin-right: 20px;
+    height: 64px;
+}
+.chefs_cards .card .card_img img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 100px;
+}
+.chefs_cards .card .card_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.chefs_cards .card .card_content h3 {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: normal;
+    color: #111111;
+}
+section#admin_chefs .chefs_cards .card .card_content a {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: bold;
+    color: #6558c3;
+    text-decoration: none;
+}
+/*** SITE ***/
+
+section#site_chefs {
+    margin: 50px auto;
+}
+section#site_chefs .chefs_cards .card .card_content h1 {
+    font-size: 18px;
+    line-height: 21px;
+    color: #111111;
+    font-weight: normal;
+}
+section#site_chefs .chefs_cards .card .card_content h3 {
+    font-size: 14px;
+    line-height: 16px;
+    color: #666666;
+    font-weight: normal;
+}
+
+section#site_chefs .chefs_cards .card .card_content {
+    gap: 5px;
+}
+
+/**** SHOW CHEF ****/
+
+section#admin_chefs div.chef_title {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto
+}
+
+section#admin_chefs div.chef_title h1 {
+    font-size: 24px;
+    line-height: 28px;
+    color: #111111;
+}
+
+
+section#admin_chefs .chef_content,
+section#site_chefs .chef_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#admin_chefs .chef_content img,
+section#site_chefs .chef_content img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+
+    border-radius: 100px;
+
+    margin-bottom: 30px;
+}
+
+section#admin_chefs .chef_content .chef_info,
+section#site_chefs .chef_content .chef_info {
+    margin: 0 auto;
+    text-align: center;
+}
+section#admin_chefs .chef_content .chef_info h1,
+section#site_chefs .chef_content .chef_info h1{
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: bold;
+    color: #111111;
+}
+section#admin_chefs .chef_content .chef_info h3,
+section#site_chefs .chef_content .chef_info h3 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #777777;
+
+}
+

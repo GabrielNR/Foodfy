@@ -1,0 +1,33 @@
+<header id="admin_header">
+    <div class="container_header">
+        
+        <div id="logo_header">
+            <a href="/admin/profile">
+                <h1>Foody</h1>
+            </a>
+        </div>
+
+        <div id="menu_header">
+            <ul>
+                <li>
+                    <a href="/admin/receitas">RECEITAS</a>
+                </li>
+                {% if admin == true %}
+                    <li>
+                        <a href="/admin/chefs">CHEFS</a>
+                    </li>
+                    <li>
+                        <a href="/admin/users">USUÁRIOS</a>
+                    </li>
+                {% endif %}
+            </ul>
+        </div>
+
+        <div class="logout">
+            <form action="/logout" method="POST">
+                <button>Sair</button>
+            </form>
+        </div>
+
+    </div>
+</header>

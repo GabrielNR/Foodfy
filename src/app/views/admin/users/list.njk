@@ -1,0 +1,42 @@
+{% extends "layout.njk" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/profile_users.css">
+{% endblock styles %}
+
+{% block header %}
+    {% include "../parts/header.njk" %}
+{% endblock header %}
+
+{% block content %}
+
+    <section class="user-list container form">
+
+        <div class="header">
+            <h1>Usuários</h1>
+            <a href="/admin/users/create" class="button">Novo</a>
+        </div>
+
+        <div class="users_cards">
+
+            {% for user in users %}
+                <div class="card">
+                    <div class="card_content">
+                        <form action="/admin/users?_method=DELETE" method="post">
+                            <h3>{{user.name}}</h3>
+                            <p>{{user.email}}</p>
+                            <input type="hidden" name="id" value="{{user.id}}">
+                            <div class="links">
+                                <a href="/admin/users/{{user.id}}">Editar</a>
+                                <button id="delete_user" type="submit">Remover</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            {% endfor %}
+
+        </div>
+
+    </section>
+
+{% endblock content %}

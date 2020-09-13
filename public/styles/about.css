@@ -1,0 +1,25 @@
+section.about {
+    margin-top: 10px;
+    margin-bottom: 50px;
+
+}
+section.about h1 {
+    color: #111111;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: bold;
+}
+
+section.about p {
+    margin-top: 20px;
+    color: #444444;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+section.about h2 {
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #111111;
+}

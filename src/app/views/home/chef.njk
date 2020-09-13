@@ -1,0 +1,59 @@
+{% extends "layout.njk" %}
+{% block styles %}
+    <link rel="stylesheet" href="/styles/cards.css">
+    <link rel="stylesheet" href="/styles/chefs.css">
+{% endblock styles %}
+
+{% block content %}
+
+    <section id="site_chefs">
+
+        <div class="chef_content">
+            <div class="chef_img">
+                <img src="{{chef.file_id}}" alt="">
+            </div>
+
+            <div class="chef_info">
+                <h1>{{chef.name}}</h1>
+                <h3>{{chef.total_recipes}}
+                    receitas</h3>
+            </div>
+        </div>
+
+    </section>
+
+    {% if recipes.length == 0 %}
+        <section id="admin_receitas">
+            <div class="receitas_cabecalho">
+                <h3>Este chef ainda não possui nenhuma receita cadastrada</h3>
+            </div>
+        </section>
+    {% else %}
+        <section id="admin_receitas">
+            <div class="receitas_cabecalho">
+                <h1>Receitas</h1>
+            </div>
+
+            <div class="receitas_cards">
+
+                {% for recipe in recipes %}
+
+                    <div class="card" id="{{recipe.title}}">
+                        <div class="card_img">
+                            <img src="{{recipe.image}}" alt="">
+                        </div>
+                        <div class="card_content">
+                            <h3>{{recipe.title}}</h3>
+                            <p>por
+                                {{chef.name}}</p>
+                            <a href="/receitas/{{recipe.id}}">Visualizar</a>
+                        </div>
+                    </div>
+                {% endfor %}
+
+            </div>
+
+        </section>
+    {% endif %}
+
+{% endblock content %}

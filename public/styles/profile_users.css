@@ -1,0 +1,154 @@
+section.user-dashborad.container.form form,
+section.user-dashborad.container.form.edit {
+    position: relative;
+    margin: 50px auto;
+    width: 100%;
+}
+
+section.user-dashborad.container.form form .header h3{
+    font-size: 24px;
+    font-weight: bold;
+    color: #111111;
+    margin-bottom: 65px;
+}
+
+section.user-dashborad.container.form form .fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+section.user-dashborad.form.container .fields .item>div {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111111;
+    margin-bottom: 10px;
+}
+
+section.user-dashborad.container.form form .fields input {
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    color: #111111;
+    font-size: 16px;
+    outline: none;
+    background: #ffffff;
+}
+
+section.user-dashborad.form.container .buttons {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    gap: 16px;
+}
+
+section.user-dashborad.form.container form button {
+    padding: 9px 35px;
+}
+
+section.user-dashborad.form.container .buttons a {
+    background-color: #8a8a8a;
+    padding: 9px 35px;
+}
+
+/** checkbox **/
+
+section.container.form form .input.checkbox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+}
+section.container.form form .input.checkbox input {
+    width: 20px;
+}
+
+/*** EDIT ***/
+section.user-dashborad.container.form.edit {
+    position: relative;
+}
+
+section.user-dashborad.container.form.edit .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.user-dashborad.container.form.edit .header form {
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    position: absolute;
+    right: 170px;
+}
+section.user-dashborad.container.form.edit .header form button {
+    background-color: #dc4747;
+    width: 139px;
+    height: 37px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 19px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+section.user-dashborad.container.form.edit .buttons {
+    position: absolute;
+    top: -83px;
+
+}
+/**** LISTAGEM ****/
+
+section.user-list.container.form .header {
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+section.user-list.container.form .header .button {
+    padding: 10px 40px;
+}
+
+section.user-list.container.form .users_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+section.user-list.container.form .users_cards .card form h3 {
+    font-size: 18px;
+    line-height: 22px;
+    color: #111111;
+    font-weight: normal;
+}
+section.user-list.container.form .users_cards .card form p {
+    font-size: 14px;
+    line-height: 17px;
+    color: #777777;
+    margin: 4px 0 16px 0;
+}
+section.user-list.container.form .users_cards .card form .links a {
+    text-decoration: none;
+    color: #6558c3;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: bold;
+    margin-right: 16px;
+}
+
+section.user-list.container.form .users_cards .card form .links button {
+    border: none;
+    background: #ffffff;
+    color: #f55a5a;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 17px;
+    cursor: pointer;
+}

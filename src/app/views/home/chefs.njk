@@ -1,0 +1,30 @@
+{% extends "layout.njk" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/chefs.css">
+{% endblock styles %}
+
+{% block content %}
+
+    <section id="site_chefs">
+
+        <div class="chefs_cards">
+
+            {% for chef in chefs %}
+                <div class="card" onclick="abrirChef({{chef.id}})">
+                    
+                    <div class="card_img">
+                        <img src="{{chef.file_id}}" alt="">
+                    </div>
+                    <div class="card_content">
+                            <h1>{{chef.name}}</h1>
+                            <h3>{{chef.total_recipes}} receitas</h3>
+                    </div>
+                    
+                </div>
+            {% endfor %}
+
+        </div>
+    </section>
+
+{% endblock content %}

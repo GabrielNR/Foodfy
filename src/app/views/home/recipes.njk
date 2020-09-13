@@ -1,0 +1,37 @@
+{% extends "layout.njk" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/cards.css">
+{% endblock styles %}
+
+{% block content %}
+
+    <section id="receitas" class="page_receitas">
+
+        {% if filter %}
+            <div class="receitas_cabecalho">
+                <h2>Buscando por "{{filter}}"</h2>
+            </div>
+        {% endif %}
+
+        <div class="receitas_cards">
+
+            {% for recipe in recipes %}
+                <div class="card" id="{{recipe.name}}" onclick="abrirReceita({{recipe.id}})">
+                    <a>
+                        <div class="card_img">
+                            <img src="{{recipe.image}}" alt="">
+                        </div>
+                        <div class="card_content">
+                            <h3>{{recipe.title}}</h3>
+                            <p>{{recipe.chef_name}}</p>
+                        </div>
+                    </a>
+                </div>
+            {% endfor %}
+
+        </div>
+
+    </section>
+
+{% endblock content %}

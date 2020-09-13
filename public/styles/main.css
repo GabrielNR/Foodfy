@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+    background-color: #eeeeee;
+}
+
+/*********** HEADER ***********/
+
+header {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container_header {
+    width: 90%;
+    max-width: 940px;
+    margin: 0 auto;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 92px 1.5fr 1fr;
+    align-items: center;
+}
+
+header .container_header #logo_header {
+    width: 91px;
+    height: 27px;
+    background: url(../assets/logo.png) no-repeat center right;
+}
+
+header .container_header #logo_header h1 {
+    text-indent: -3000px;
+}
+
+header .container_header #menu_header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header .container_header #menu_header ul li {
+    float: left;
+    margin-right: 30px;
+}
+
+header .container_header #menu_header ul li a {
+    text-decoration: none;
+    color: #111111;
+    font-size: 16px;
+    line-height: 19px;
+}
+header .container_header #search form {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}   
+header .container_header #search form input {
+    width: 245px;
+    border-radius: 4px;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+    outline: none;
+    font-size: 14px;
+    line-height: 16px;
+    color: #999999;
+    padding: 10px;
+
+}
+
+/********* ADMIN HEADER *****/
+header#admin_header {
+    background-color: #111111;
+}
+header#admin_header .container_header #logo_header {
+    background: url(../assets/logo2.png) no-repeat center right;
+}
+header#admin_header .container_header #menu_header ul li a {
+    color: #eeeeee;
+}
+
+header#admin_header .container_header .logout {
+    justify-self: end;
+}
+header#admin_header .container_header .logout button {
+    border: none;
+    background-color: #111111;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: normal ;
+    text-transform: uppercase;
+    transition: 300ms;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+header#admin_header .container_header .logout button:hover {
+    font-weight: bold;
+}
+/********** MAIN ************/
+
+main.container {
+    width: 90%;
+    max-width: 940px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.button {
+    height: 37px;
+    padding: 8px 24px;
+    background-color: #6558c3;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+}
+
+/********** FOOTER ***********/
+
+
+
+footer .footer_container {
+    max-width: 940px;
+    height: 62px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer_container .footer_infos p {
+    text-align: center;
+    color: #999999;
+    font-size: 14px;
+    line-height: 24px;
+}

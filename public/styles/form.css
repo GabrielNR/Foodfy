@@ -1,0 +1,277 @@
+section.page_create {
+    margin: 50px auto;
+}
+
+form#new_recipe .admin_receita {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form#new_recipe .admin_receita h4 {
+    color: #111111;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+button#save_recipe {
+    background-color: #6558c3;
+    width: 139px;
+    height: 37px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 19px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    box-sizing: border-box;
+
+}
+
+div.receita_descricao_titles {
+    margin-top: 30px;
+}
+div.receita_descricao_titles h2 {
+    color: #111111;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+div.receita_input div > div {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 32px;
+    align-items: center;
+}
+form select {
+    /*permitir estilização no sleect*/
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    /*trazer de volta o icone lateral*/
+    background-color: #fff;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: right 0.7em top 50%, 0 0;
+    background-size: 0.65em auto, 100%;
+}
+
+div.receita_input input,
+div.receita_infos textarea,
+form select {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #DDDDDD;
+    outline: none;
+}
+div.receita_infos textarea {
+    margin-top: 10px;
+}
+
+div.receita_input input,
+form select {
+    font-size: 16px;
+    padding: 8px;
+}
+div.receita_input div span {
+    padding: 8px;
+    font-weight: bold;
+    color: #6558c3;
+    cursor: pointer;
+}
+
+div.receita_input div span.hidden,
+div.receita_input div span.hidden2 {
+    visibility: hidden;
+}
+
+div.receita_input > span {
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #6558c3;
+    font-size: 16px;
+    line-height: 19px;
+    cursor: pointer;
+}
+
+/******* PAGE EDIT *********/
+
+section#edit {
+    margin: 50px auto;
+}
+
+section#edit .admin_receita {
+    float: left;
+    width: 83%;
+    display: grid;
+    grid-template-columns: 1fr 140px;
+}
+
+section#edit .admin_receita h1 {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;
+    color: #111111;
+}
+
+button#delete_recipe {
+    background-color: #dc4747;
+    width: 139px;
+    height: 37px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 19px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    box-sizing: border-box;
+
+}
+
+section#edit button#save_recipe {
+    float: right;
+}
+
+section#edit span.cleaner {
+    display: block;
+    clear: both;
+}
+
+/*** PHOTOS GALLERY ***/
+
+form #photos-gallery {
+    display: flex;
+    gap: 10px;
+}
+
+form #photos-upload {
+    position: relative;
+    display: block;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ffffff;
+    border: 1px solid #DDDDDD;
+    border-radius: 3.5px;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+
+}
+
+form #photos-upload span {
+    padding: 8px 16px;
+    color: black;
+
+    width: 100%;
+
+    
+    text-align: center;
+    justify-self: center;
+
+    font-size: 28px;
+    color: #777777;
+}
+
+form #photos-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+form #photos-preview {
+    display: flex;
+    gap: 10px;
+    width: 150px;
+}
+
+form #photos-preview img {
+    width: 150px;
+    height: 150px;
+
+    object-fit: cover;
+}
+
+#photos-preview .photo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+}
+
+#photos-preview .photo i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.8);
+
+    color: red;
+    height: 150px;
+    width: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 400%;
+    cursor: pointer;
+    opacity: 0;
+
+    transition: 0.2s;
+}
+
+#photos-preview .photo:hover i {
+    opacity: 1;
+}
+
+/*** AVATAR INPUT ***/
+
+form .avatar-upload {
+    position: relative;
+    display: block;
+    overflow: hidden;
+
+    width: 140px;
+}
+
+form .avatar-upload p {
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #6558c3;
+    display: block;
+    width: 140px;
+    text-align: center;
+
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+form .avatar-upload #avatar-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    overflow: hidden;
+    width: 140px;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+

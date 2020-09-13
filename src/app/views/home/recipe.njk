@@ -1,0 +1,78 @@
+{% extends "layout.njk" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/cards.css">
+    <link rel="stylesheet" href="/styles/recipe.css">
+{% endblock styles %}
+
+{% block content %}
+
+    <section id="receita" class="page_receita">
+
+        <div class="gallery">
+            <div class="highlight">
+                {% if not files[0] %}
+                    <img src="http://placehold.it/500x500?text=PRODUTO SEM FOTO" alt="">
+                {% else %}
+                    <img src="{{files[0].src}}" alt="{{files[0].name}}" onclick="Lightbox.open()">
+                {% endif %}
+
+                <div class="lightbox-target">
+                    <img src="{{files[0].src}}" alt="{{files[0].name}}">
+                    <a href="#" class="lightbox-close" onclick="Lightbox.close()">
+                        <i class="material-icons">
+                            close
+                        </i>
+                    </a>
+                </div>
+            </div>
+            <div class="gallery-preview">
+                {% for image in files %}
+                    <img src="{{image.src}}" alt="{{image.name}}" {% if loop.index0 == 0 %} class="active" {% endif %} onclick="ImageGallery.setImage(event)">
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="receita_title">
+            <h1>{{recipe.title}}</h1>
+            <h3>por
+                {{recipe.chef_name}}</h3>
+        </div>
+
+        <div class="receita_descricao">
+            <div class="receita_descricao_titles">
+                <h2>Ingredientes</h2>
+                <span id="ingredientes" onclick="esconder('receita_ingredientes', 'ingredientes')">ESCONDER</span>
+            </div>
+            <div class="receita_ingredientes">
+                <ul>
+                    {% for ingredientes in recipe.ingredients %}
+                        <li>{{ingredientes}}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="receita_descricao_titles">
+                <h2>Modo de preparo</h2>
+                <span id='preparo' onclick="esconder('receita_preparo', 'preparo')">ESCONDER</span>
+            </div>
+            <div class="receita_preparo">
+                <ul>
+                    {% for preparo in recipe.preparation %}
+                        <li>{{preparo}}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% if (recipe.information) %}
+                <div class="receita_descricao_titles">
+                    <h2>Informações adicionais</h2>
+                    <span id='infos' onclick="esconder('receita_infos', 'infos')">ESCONDER</span>
+                </div>
+                <div class="receita_infos">
+                    <p>{{recipe.information}}</p>
+                </div>
+            {% endif %}
+        </div>
+
+    </section>
+
+{% endblock content %}
