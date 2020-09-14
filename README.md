@@ -40,7 +40,9 @@
 
 <p align="center">
   <a href="#rocket-sobre-o-desafio">Sobre o desafio</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#calendar-entrega">Entrega</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#art-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#books-sobre o Bootcamp">Sobre o Bootcamp</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#pushpin-contribuindo">Contribuindo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
 
@@ -56,7 +58,7 @@ preparo e informações adicionais pertinentes.
 
 <br>
 
-# 🛠 Tecnologias utilizadas
+## :computer: Tecnologias utilizadas
 A seguinte stack foi utilizada na construção do projeto:
 
 - NODE.JS
@@ -65,7 +67,7 @@ A seguinte stack foi utilizada na construção do projeto:
 
 <br>
 
-# :construction_worker: Instalação
+## :construction_worker: Instalação
 
 **Primeiramente você precisa ter instalado o [Node.js](https://nodejs.org/en/download/) e o [Postbird](https://github.com/Paxa/postbird), depois efetuar o clone deste repositório a partir do seguinte comando:**
 
@@ -121,7 +123,7 @@ Após o início do servidor, graças a dependência [browser-sync](https://www.b
 
 <br>
 
-# :runner: Vamos começar
+## :runner: Let's start
 
 **Login**
 
