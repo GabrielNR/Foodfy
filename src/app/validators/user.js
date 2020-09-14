@@ -108,8 +108,6 @@ async function isAdmin(req, res, next) {
 
     const user = await User.findOne({where: {id}})
 
-    console.log(user)
-
     let admin = ""
 
     if (user.is_admin == true ) {
