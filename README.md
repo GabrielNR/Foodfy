@@ -91,7 +91,7 @@ npm install
 **Configure o banco de dados**
 
 Crie o banco de dados dentro do [Postbird](https://github.com/Paxa/postbird) utilizando as queries do arquivo [database.sql](https://github.com/BrunoBelarminoNog/FoodFy/blob/master/database.sql). 
-E o arquivo [db.js](https://github.com/BrunoBelarminoNog/FoodFy/blob/master/src/config/db.js) configure a conexão do Postbird com o user e password da sua máquina:
+E no arquivo [db.js](https://github.com/BrunoBelarminoNog/FoodFy/blob/master/src/config/db.js) configure a conexão do Postbird com o user e password da sua máquina:
 
 
 ```
