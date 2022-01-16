@@ -21,7 +21,7 @@
 </h2>
 <br>
 
-<blockquote align="center">“Se você quer chegar onde a maioria não chega, faça o que a maioria não faz.” (Bill Gates)</blockquote>
+<blockquote align="center">“Se você deixa o machado perder o corte e não afia, terá de trabalhar muito mais. É mais inteligente planejar antes de agir.” </blockquote>
 <br>
 
 <p align="center">
@@ -41,8 +41,6 @@
 <p align="center">
   <a href="#rocket-sobre-o-desafio">Sobre o desafio</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#art-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#books-sobre o Bootcamp">Sobre o Bootcamp</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#pushpin-contribuindo">Contribuindo</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#unlock-licença">Licença</a>
 </p>
 
@@ -72,14 +70,14 @@ A seguinte stack foi utilizada na construção do projeto:
 **Primeiramente você precisa ter instalado o [Node.js](https://nodejs.org/en/download/) e o [Postbird](https://github.com/Paxa/postbird), depois efetuar o clone deste repositório a partir do seguinte comando:**
 
 ```
-git clone https://github.com/BrunoBelarminoNog/foodfy.git
+git clone https://github.com/GabrielNR/Foodfy.git
 ```
 
 URLs SSH fornecem acesso a um repositório Git via SSH, um protocolo seguro. Se você tiver uma chave SSH registrada em
 sua conta do Github, clone o projeto usando este comando:
 
 ```
-git clone git@github.com:BrunoBelarminoNog/foodfy.git
+git clone git@github.com:GabrielNR/Foodfy.git
 ```
 
 **Instale as dependências**
@@ -90,8 +88,8 @@ npm install
 
 **Configure o banco de dados**
 
-Crie o banco de dados dentro do [Postbird](https://github.com/Paxa/postbird) utilizando as queries do arquivo [database.sql](https://github.com/BrunoBelarminoNog/FoodFy/blob/master/database.sql). 
-E no arquivo [db.js](https://github.com/BrunoBelarminoNog/FoodFy/blob/master/src/config/db.js) configure a conexão do Postbird com o user e password da sua máquina:
+Crie o banco de dados dentro do [Postbird](https://github.com/Paxa/postbird) utilizando as queries do arquivo [database.sql]
+E no arquivo [db.js] configure a conexão do Postbird com o user e password da sua máquina:
 
 
 ```
