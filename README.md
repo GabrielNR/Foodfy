@@ -151,22 +151,5 @@ Usuários comuns apenas podem criar, editar e deletar suas próprias receitas.
 </p>
 
 
-# :books: Sobre o Bootcamp
-O LaunchBase é um bootcamp oferecido pela Rocketseat, com aulas ministradas por Mayk Brito, que tem como objetivo preparar iniciantes no mundo do desenvolvimento web para o mercado de trabalho. Explicando de forma clara e objetiva as stacks mais usadas atualmente.
-
-Este repositório é um clone de parte do repositório master que contêm além deste  projeto, todos os outros feitos em aula e as atividades extras do decorrer do curso. [Acesse clicando aqui!](https://github.com/BrunoBelarminoNog/bootcamp_launchbase_rocketseat)
-
-
-# :pushpin: Contribuindo
-
-Sinta-se à vontade para registrar um novo problema com o respectivo título e descrição no repositório Foodfy . Se você já encontrou uma solução para o problema, eu adoraria revisar sua solicitação de pull!
-
-Verifique a página de contribuição para ver os melhores lugares para registrar problemas, iniciar discussões e começar a contribuir.
-
-
 # :unlock: Licença
-Lançado em 2020. Este projeto está sob a licença do MIT .
-
-Feito com muita dedicação por Bruno Belarmino :zap:
-
-Me siga nas redes! [LinkdIn](https://www.linkedin.com/in/bruno-belarmino-nog/) - [Instagram](https://www.instagram.com/brunobelarmino)
+Lançado em 2022. Este projeto está sob a licença do MIT .
